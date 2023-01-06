@@ -17,9 +17,13 @@ export default () => {
 
   return(
     <div className='page'>
-      Header
-      Destaque 
-      As Listas diversas
+      <section className='listas'>
+        {movieList.map((item, key) => (
+          <div>
+            {item.title}
+          </div>
+        ))}
+      </section>
     </div>
   )
 }
